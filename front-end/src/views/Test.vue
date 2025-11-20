@@ -53,7 +53,7 @@ export default {
     return {
       words: [],
       current: null,
-      targetLang: "german", // 'german' hoặc 'vietnamese'
+      targetLang: "german", 
       answer: "",
       result: null
     };
@@ -65,10 +65,8 @@ export default {
     next() {
       if (!this.words.length) return;
 
-      // random chọn word
       this.current = this.words[Math.floor(Math.random() * this.words.length)];
 
-      // random target language: 0 => german, 1 => vietnamese
       this.targetLang = Math.random() < 0.5 ? "german" : "vietnamese";
 
       this.answer = "";

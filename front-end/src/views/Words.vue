@@ -23,12 +23,6 @@
             >
               View
             </router-link>
-            <router-link
-              :to="{ name: 'edit', params: { id: w._id } }"
-              class="ui tiny button"
-            >
-              Edit
-            </router-link>
           </td>
         </tr>
       </tbody>

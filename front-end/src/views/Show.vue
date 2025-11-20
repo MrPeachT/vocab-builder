@@ -12,6 +12,10 @@
         Edit
       </router-link>
 
+      <router-link to="/words" class="ui button">
+        Back to List
+      </router-link>
+
       <button class="ui red button" @click="deleteWord">
         Delete
       </button>
@@ -20,6 +24,7 @@
 </template>
 
 <script>
+import router from "@/router";
 import { api } from "../helpers/helpers";
 
 export default {
